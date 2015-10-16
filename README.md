@@ -24,53 +24,11 @@ Just like Somnambulist's script, this script creates a new part that can be conf
 
 Yes, simply replace all instances of _Firespitter_ and _FSfuelSwitch_ with _InterstellarFuelSwitch_ and all instances of _FStextureSwitch2_ with _InterstellarTextureSwitch2_. I was originally going to use Interstellar Fuel Switch, but since I already had another mod installed that used Firespitter, I didn't want the duplication.
 
+*Update* With recent updates to ModuleManager, I will eventually add a switch that allows the use of either Firespitter or Interstellar Fuel Switch. However, I currently have not ETA for it.
+
 ###I like TweekScale. Can I still use this script?
 
-Of course. If TweekScale is installed, the small and large containers are automatically disabled. Then you simply need to create _TACLS Declutter TweakScale.cfg_ and add this code.
-
-```
-@PART[ConfigurableHexCanTACLifeSupport]:NEEDS[TweakScale]
-{
-	@description = A configurable resource canister containing Life Support supplies.
-
-	@MODULE[FSfuelSwitch]
-	{
-		@tankCost = 0;0;0;0;0
-	}
-
-	MODULE
-	{
-		name = TweakScale
-		type = surface
-		freeScale = false
-		defaultScale = 1.0
-		scaleFactors = 0.5, 1.0, 2.0, 4.0
-		scaleNames = 50%, 100%, 200%, 400%
-		techRequired = survivability, survivability, heavyRocketry, experimentalRocketry
-	}
-}
-
-@PART[ConfigurableTacLifeSupportContainer]:NEEDS[TweakScale]
-{
-	@description = A configurable container full of Life Support supplies.
-	
-	@MODULE[FSfuelSwitch]
-	{
-		@tankCost = 0;0;0;0;0
-	}
-
-	MODULE
-	{
-		name = TweakScale
-		type = stack
-		freeScale = false
-		defaultScale = 1.0
-		scaleFactors = 0.5, 1.0, 2.0, 4.0
-		scaleNames = 50%, 100%, 200%, 400%
-		techRequired = survivability, survivability, heavyRocketry, experimentalRocketry
-	}
-}
-```
+If you wish to use TweekScale, simply copy _Optional/TACLS Declutter TweakScale.cfg_ to the _GameData/TAC-LS Declutter Revised_ directory.
 
 ###Can I replace Somnambulist's script with this one?
 
