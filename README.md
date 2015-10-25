@@ -16,7 +16,7 @@ Somnambulist had previously released a [declutter script](http://forum.kerbalspa
 
 ##Known issues
 
-Just like Somnambulist's script, this script creates a new part that can be configured. The original TAC Life Support parts will continue to function on existing craft, but will no longer be available in the VAB or SPH. However, any craft built after the script is installed will break if you uninstall the script.
+Just like Somnambulist's script, this script creates a new part that can be configured. The original TAC Life Support parts will continue to function on existing craft, but will no longer be available in the VAB or SPH. However, any craft built with the life support parts after the script is installed will break if you uninstall the script.
 
 ##FAQ
 
